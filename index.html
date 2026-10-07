@@ -302,7 +302,7 @@ sup.fnref{font-family:var(--sans);font-size:9.5px;font-weight:600;color:var(--ac
       <p>AI Discovery Readout</p>
     </div>
     <div class="searchwrap">
-      <input id="q" type="search" placeholder="Search 192 notes" autocomplete="off" aria-label="Search notes">
+      <input id="q" type="search" placeholder="Search notes" autocomplete="off" aria-label="Search notes">
     </div>
     <div id="nav"></div>
     <div id="results" hidden></div>
@@ -651,6 +651,7 @@ sup.fnref{font-family:var(--sans);font-size:9.5px;font-weight:600;color:var(--ac
     }
   },{passive:true});
 
+  qEl.placeholder='Search '+order.length+' notes';
   buildNav();
   go(DATA.home,null);
 })();
